@@ -1,1 +1,1 @@
-# art-inspiration-generator
+beginning personal project on 8/15/23 # art-inspiration-generator
