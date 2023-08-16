@@ -34,7 +34,7 @@ const items = [
     'Crown', 'Mask', 'Globe', 'Treasure Map', 'Ink Bottle',
     'Music Sheet', 'Scepter', 'Spyglass', 'Wand', 'Mechanical Gear',
     'Mystical Amulet', 'Pocket Knife', 'Stethoscope', 'Golden Key', 'Puzzle Box',
-    'Paint Tube', 'Pirate Hat', 'Coffee Mug', 'Sketchbook', 'cheese', 'Magic Wand', 'Flower Bouquet',
+    'Paint Tube', 'Pirate Hat', 'Coffee Mug', 'Sketchbook', 'Cheese', 'Magic Wand', 'Flower Bouquet',
     'Stuffed Animal', 'Cake', 'Train', 'Toys', 'Spatula', 'Bicycle', 'Hot Air Balloon', 'Lollipop', 'Star-shaped Sunglasses',
     'Jellyfish Lanterns', 'Mushroom Teapot', 'Flower Crown Wreath'
 ]
