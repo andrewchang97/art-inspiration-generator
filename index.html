@@ -11,7 +11,7 @@
     <header>
         <a href="#">Generator</a>
         <a href="#">Other art</a>
-        <a href="#">Suggestions</a>
+        <a href="form.html">Suggestions</a>
     </header>
     <div>
     <h1>Welcome to the Art Inspiration Generator!</h1>
@@ -19,17 +19,23 @@
     <div class="container">
         <div class="animals main">
             <p class="title">Animal: </p>
-            <p><span id="animals"></span></p>
+            <div class="rolling-slot">
+                <p><span id="animals"></span></p>
+            </div>
         </div>
         <div class="locations main">
             <p class="title">Location: </p>
-            <p><span id="locations"></span></p>
+            <div class="rolling-slot">
+                <p><span id="locations"></span></p>
+            </div>
         </div>
         <div class="items main">
             <p class="title">Item: </p>
-            <p><span id="items"></span></p>
+            <div class="rolling-slot">
+                <p><span id="items"></span></p>
+            </div>
         </div>
-    </div>
+    </div>    
     <div class="generateButton">
     <button class="generate">Roll!</button>
     </div>

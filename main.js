@@ -39,8 +39,8 @@ const items = [
     'Jellyfish Lanterns', 'Mushroom Teapot', 'Flower Crown Wreath'
 ]
 
-const generateButton = document.querySelector('.generate');
-generateButton.addEventListener('click', generateRandomly);
+// const generateButton = document.querySelector('.generate');
+// generateButton.addEventListener('click', generateRandomly);
 
 function generateRandomly() {
     const randomAnimal = animals[Math.floor(Math.random() * animals.length)];
@@ -50,4 +50,42 @@ function generateRandomly() {
     document.getElementById('animals').textContent = randomAnimal;
     document.getElementById('locations').textContent = randomLocation;
     document.getElementById('items').textContent = randomItem;
+}
+const generateButton = document.querySelector('.generate');
+generateButton.addEventListener('click', startShuffle);
+
+function startShuffle() {
+    // Disable the button during the shuffle to prevent multiple clicks
+    generateButton.disabled = true;
+
+    const shuffleDuration = 2000; // Duration of the shuffle in milliseconds
+    const shuffleInterval = 100; // Interval between updates during the shuffle
+    let shuffleTimer;
+
+    const animalsElement = document.getElementById('animals');
+    const locationsElement = document.getElementById('locations');
+    const itemsElement = document.getElementById('items');
+
+    let shuffleCount = 0;
+
+    shuffleTimer = setInterval(() => {
+        shuffleCount++;
+
+        // Shuffle the elements
+        const randomAnimal = animals[Math.floor(Math.random() * animals.length)];
+        const randomLocation = locations[Math.floor(Math.random() * locations.length)];
+        const randomItem = items[Math.floor(Math.random() * items.length)];
+
+        animalsElement.textContent = randomAnimal;
+        locationsElement.textContent = randomLocation;
+        itemsElement.textContent = randomItem;
+
+        // Stop the shuffle after shuffleDuration
+        if (shuffleCount * shuffleInterval >= shuffleDuration) {
+            clearInterval(shuffleTimer);
+
+            // Re-enable the button after the shuffle is complete
+            generateButton.disabled = false;
+        }
+    }, shuffleInterval);
 }

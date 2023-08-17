@@ -3,9 +3,10 @@
 p{
     margin: 0;
     padding: 0;
+    font-family: 'Varela Round', sans-serif
 }
 body{
-    background-color: hsl(350, 100%, 88%);
+    background-color: #A28164;
 }
 a{
     text-decoration: none;
@@ -21,21 +22,29 @@ h1{
     font-family: 'Pacifico', cursive, Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 300;
 }
+h2{
+    font-family: 'Varela Round', sans-serif;
+}
 .container{
     display: flex;
     justify-content: center;
+    background-color: #836850;
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
 }
 .main {
     display: grid;
     /* grid-template-columns: 1fr 1fr 1fr; */
     grid-gap: 10px;
-    background-color: rgb(168, 168, 168);
+    background-color: #C4B09E;
     margin: 12px;
     padding: 10px;
     font-family: 'Varela Round', sans-serif;
     width: 180px;
     height: 240px;
     text-align: center;
+    transition: transform 1s ease-in-out;
 }
 .generate{
     font-family: 'Varela Round', sans-serif;
@@ -50,4 +59,28 @@ h1{
 }
 .title{
     font-size: 24px;
+}
+.pForm{
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+label span {
+    display: inline-block;
+    width: 120px;
+    text-align: right;
+}
+input, textarea {
+    font: 1em sans-serif;
+    width: 250px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+button {
+    margin: 20px 0 0 124px;
+}
+.backButton{
+    font-size: 12px;
 }
